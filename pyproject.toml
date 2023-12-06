@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "epb"
+version = "0.1.0"
+description = "Imutable STIG Hardener For Ubuntu"
+authors = ["--- <---->"]
+license = "AGPL"
+readme = "README.md"
+
+[tool.poetry.scripts]
+epb = "epb.epb:main"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+rich = "^13.7.0"
+checksumdir = "^1.2.0"
+setuptools = "^69.0.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
